@@ -7,8 +7,11 @@
     "description": "Brain games project",
     "autoload": {
         "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        }
+            "BrainGames\\": "src/"
+        },
+        "files": [
+            "src/Cli.php"
+        ]
     },
     "authors": [
         {
@@ -16,5 +19,7 @@
             "email": "web.artisant@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.15"
+    }
 }
