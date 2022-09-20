@@ -1,0 +1,20 @@
+{
+    "name": "hexlet/code",
+    "bin": [
+        "bin/brain-games"
+    ],
+    "license": "MIT",
+    "description": "Brain games project",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gennadiy Kim",
+            "email": "web.artisant@gmail.com"
+        }
+    ],
+    "require": {}
+}
