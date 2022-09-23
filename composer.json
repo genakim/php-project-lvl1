@@ -2,7 +2,8 @@
     "name": "hexlet/code",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "license": "MIT",
     "description": "Brain games project",
@@ -12,7 +13,9 @@
         },
         "files": [
             "src/Cli.php",
-            "src/Game.php"
+            "src/Engine.php",
+            "src/Games/IsEven.php",
+            "src/Games/Calc.php"
         ]
     },
     "authors": [
