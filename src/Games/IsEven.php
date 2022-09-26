@@ -8,12 +8,12 @@ const GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no".';
 const MIN_NUM = 1;
 const MAX_NUM = 100;
 
-function game(): \Closure
+function start(): \Closure
 {
-    return fn() => start();
+    return fn() => isEven();
 }
 
-function start(): array
+function isEven(): array
 {
     $num = rand(MIN_NUM, MAX_NUM);
     $isEven = $num % 2 === 0;

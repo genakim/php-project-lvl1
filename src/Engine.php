@@ -24,7 +24,7 @@ function startGame(callable $game, string $gameRule): void
         line("Question: $question");
         $playerAnswer = prompt("Your answer");
 
-        if ($correctAnswer === $playerAnswer) {
+        if ($correctAnswer == $playerAnswer) {
             line('Correct!');
         } else {
             line("'$playerAnswer' is wrong answer ;(. Correct answer was '$correctAnswer'.");

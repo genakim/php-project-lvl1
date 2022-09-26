@@ -9,12 +9,12 @@ const OPERATIONS = ['+', '-', '*'];
 const MIN_NUM = 1;
 const MAX_NUM = 30;
 
-function game(): \Closure
+function start(): \Closure
 {
-    return fn() => start();
+    return fn() => calc();
 }
 
-function start(): array
+function calc(): array
 {
     $a = rand(MIN_NUM, MAX_NUM);
     $b = rand(MIN_NUM, MAX_NUM);
@@ -28,5 +28,5 @@ function start(): array
         '*' => $a * $b,
     };
 
-    return [$question, (string) $correctAnswer];
+    return [$question, $correctAnswer];
 }

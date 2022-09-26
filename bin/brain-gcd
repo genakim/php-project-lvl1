@@ -6,7 +6,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use function BrainGames\Engine\startGame;
-use function BrainGames\Games\IsEven\start;
-use const BrainGames\Games\IsEven\GAME_RULE;
+use function BrainGames\Games\Gcd\start;
+use const BrainGames\Games\Gcd\GAME_RULE;
 
 startGame(start(), GAME_RULE);
