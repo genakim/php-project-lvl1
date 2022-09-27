@@ -12,8 +12,8 @@ const MAX_LEN = 10;
 const MIN_STEP = 2;
 const MAX_STEP = 5;
 
-const MIN_START = 0;
-const MAX_START = 100;
+const MIN_START_POSITION = 0;
+const MAX_START_POSITION = 100;
 
 function start(): \Closure
 {
@@ -25,7 +25,7 @@ function progression(): array
     $progression = [];
     $len = rand(MIN_LEN, MAX_LEN);
     $step = rand(MIN_STEP, MAX_STEP);
-    $start = rand(MIN_START, MAX_START);
+    $start = rand(MIN_START_POSITION, MAX_START_POSITION);
 
     $lastValue = $start;
 

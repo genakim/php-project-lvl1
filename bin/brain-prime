@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use function BrainGames\Engine\startGame;
+use function BrainGames\Games\IsPrime\start;
+use const BrainGames\Games\IsPrime\GAME_RULE;
+
+startGame(start(), GAME_RULE);
