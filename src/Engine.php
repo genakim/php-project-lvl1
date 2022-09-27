@@ -28,6 +28,7 @@ function startGame(callable $game, string $gameRule): void
             line('Correct!');
         } else {
             line("'$playerAnswer' is wrong answer ;(. Correct answer was '$correctAnswer'.");
+            line("Let's try again, $playerName!");
             return;
         }
     }
